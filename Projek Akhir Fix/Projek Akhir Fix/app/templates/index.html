@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Judul Halaman -->
+	<title>PA K3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/bootstrap.min.css') }} type="text/css">
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/client_side.css') }}  type="text/css">
+	
+	<!-- JavaScript -->
+	<script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+</head>
+
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			
+			<!-- Logo -->
+			<div class="navbar-header">
+				<img src={{ url_for('static', filename='/images/logo.png') }} alt="Orbit Logo" 
+				width="50" height="50" align="left">
+				<a class="navbar-brand" href="#halamanku">&#160;Energy Saving For The World</a>
+			</div>
+			
+			<!-- Daftar Halaman -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#informasi">INFORMASI</a></li>
+					<li><a href="#aplikasi">APLIKASI</a></li>
+					<li><a href="#anggotaKelompok">ANGGOTA KELOMPOK</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Bagian Halaman (Informasi) -->
+	<div id="informasi" class="container-fluid">
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				<!-- Deskripsi Aplikasi -->
+				<h2>Ant-MoLis</h2>
+				<h4>Analisis Sentiment Mobil Listrik</h4><br>
+				<p style="text-align: justify;text-justify: inter-word;">
+					Aplikasi ini dibuat khusus untuk mendeteksi Sentimen analisis terhadap mobil listrik 
+					terus meningkat seiring dengan kesadaran global akan pentingnya mobilitas berkelanjutan. 
+					Banyak konsumen yang antusias mengenai inovasi ini, percaya bahwa mobil listrik dapat 
+					mengurangi emisi karbon dan membantu menjaga lingkungan. Selain itu, mereka melihat keuntungan 
+					dalam efisiensi energi dan kinerja yang lebih baik. Namun, ada juga sebagian orang yang masih 
+					ragu terkait ketersediaan infrastruktur pengisian daya dan biaya tinggi mobil listrik. Meskipun 
+					demikian, secara keseluruhan, sentimen positif terhadap mobil listrik terus menguat seiring 
+					dengan kemajuan teknologi dan perubahan kesadaran akan keberlanjutan. 
+				</p>
+			    <br>
+
+				<!-- Tombol Mulai -->
+				<nav id="navgo" class="navbar" style="background-color:#ffffff;z-index: 0;">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="btn btn-default btn-lg" href="#aplikasi" style="background-color:#28ace5">Mulai</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="col-sm-6">
+				<br>
+				<br>
+				<!-- Gambar Deskripsi Aplikasi -->
+				<img src={{ url_for('static', filename='/images/car.jpg') }} width="500" ></img>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bagian Halaman (Aplikasi) -->
+	<div id="aplikasi" data-bs-spy="scroll" data-bs-target="#navgo" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				<!-- HP 1 (Oknum) -->
+				<div class="phone_bg1">
+
+					<br>
+					<br>
+					  
+					<div class="chat-box1">
+						<!-- Header 1 (Oknum) -->
+						<div class="chat-box-header1">Masukin Teks</div>
+						
+						<div class="chat-box-body1">
+							<div class="chat-box-overlay1"></div>
+							<div class="chat-logs1">
+								<!-- Chat Log 1 (Oknum) -->
+							</div>
+						</div>
+						
+						<div class="chat-input1">      
+							<form>
+								<!-- Input Chat 1 (Oknum) -->
+								<input type="text" id="chat-input1" placeholder="Masukin Teks ..."/>
+								
+								<!-- Tombol Send 1 (Oknum) -->
+								<button type="submit" class="chat-submit1" id="chat-submit1"><i class="material-icons">send</i></button>
+							</form>      
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<div class="col-sm-6">
+				<!-- HP 2 (Anda) -->
+				<div class="phone_bg2">
+
+					<br>
+					<br>
+					  
+					<div class="chat-box2">
+						<!-- Header 2 (Anda) -->
+						<div class="chat-box-header2">Hasil</div>
+						
+						<div class="chat-box-body2">
+							<div class="chat-box-overlay2"></div>
+							<div class="chat-logs2">
+								<!-- Chat Log 2 (Anda) -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bagian Halaman (Anggota Kelompok) -->
+	<div id="anggotaKelompok" class="container-fluid text-center">
+		
+		<h2>ANGGOTA KELOMPOK 3</h2>
+		<h4>Tim Deployment NLP</h4>
+		<br>
+		<div class="row slideanim">
+			<div class="col-sm-4">
+				 <img src={{ url_for('static',  filename='/images/bintang.JPG') }} width="90" height="120"></img>
+				<h4>Bintang Cahya</h4>
+				<p>Jurusan Teknik Informatika</p>
+				<p>UIN SUSKA RIAU</p>
+			</div>
+			<div class="col-sm-4">
+				 <img src={{ url_for('static',  filename='/images/daffa.jpg') }} width="90" height="120"></img>
+				<h4>Daffa Takratama Sarva</h4>
+				<p>Jurusan Sistem Informasi</p>
+				<p>UIN  SUSKA RIAU</p>
+			</div>
+			<div class="col-sm-4">
+				 <img src={{ url_for('static',  filename='/images/aldo.jpg') }} width="90" height="120"></img>
+				<h4>Muhammad Ripaldo Pratama</h4>
+				<p>Jurusan Sistem Informasi</p>
+				<p>UIN  SUSKA RIAU</p>
+			</div>
+		</div>
+	    <br>
+	    <div class="row slideanim">
+			<div class="col-sm-6">
+				 <img src={{ url_for('static',  filename='/images/yandra.jpg') }} width="90" height="120"></img>
+				<h4>Yandra Jumadil Saputra</h4>
+				<p>Jurusan Elektro</p>
+				<p>UIN  SUSKA RIAU</p>
+			</div>
+			<div class="col-sm-6">
+				 <img src={{ url_for('static',  filename='/images/yoga.jpg') }} width="90" height="120"></img>
+				<h4>Yoga El Saputra</h4>
+				<p>Jurusan Teknik Informatika</p>
+				<p>UIN  SUSKA RIAU</p>
+			</div>
+	    </div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<a href="#halamanku" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Orbit Future Academy <br> <a href="https://orbitfutureacademy.id/">orbitfutureacademy.id</a></p>
+	</footer>
+
+	<!-- JavaScript untuk Animasi Scroll dan Prediksi Model -->
+	<script  src={{ url_for('static', filename='/js/client_side.js') }}></script>
+
+</body>
+</html>
